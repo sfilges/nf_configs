@@ -1,0 +1,26 @@
+# Nextflow config files
+
+Custom configuration files for nextflow pipelines.
+
+## Cloud platforms
+
+Config files for batch analyses on infrastructure from Microsoft, Amazon and Google.
+
+### Azure
+
+A generic config file for Azure Batch is under `cloud/azurebatch.config`. 
+
+A well-known issue with Azure Batch is that VM instances have fixed disk storage, 
+which may lead to issues with with resource intensive workflows. In that case it may be
+necessary to reudce the number of jobs created, or increase the resource requirements of 
+the offending processes to reduce the number of jobs per instance. Configuration files
+for specific pipelines (e.g. from nf-core) are found in their respective folders.
+
+### AWS
+
+TBD
+
+### Google Batch
+
+TBD
+
